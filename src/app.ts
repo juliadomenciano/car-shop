@@ -1,4 +1,4 @@
-import express from 'express';// iniciando projeto
+import express from 'express';
 
 const app = express();
 
