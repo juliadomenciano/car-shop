@@ -1,4 +1,4 @@
-export interface IModel<T> {
+export interface IService<T> {
   create(obj:T):Promise<T>,
   read():Promise<object[]>,
   readOne(_id:string):Promise<T | null>,
