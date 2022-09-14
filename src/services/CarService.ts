@@ -29,7 +29,7 @@ class CarService implements IService<ICar> {
     if (!parsed.success) {
       throw parsed.error;
     }
-    const result = await this._car.update(_id, obj);
+    const result = await this._car.update(_id, parsed.data);
     if (!result) {
       throw new Error('Unknown error');
     }
