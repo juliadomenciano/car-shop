@@ -16,7 +16,7 @@ const errorHandler: ErrorRequestHandler = (err: Error | ZodError, _req, res, _ne
   }
   console.error(err);
   
-  return res.status(500).json({ error: 'internal error' });
+  return res.status(404).json({ error: 'Object not found' });
 };
 
 export default errorHandler;
