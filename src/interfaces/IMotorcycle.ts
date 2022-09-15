@@ -9,7 +9,7 @@ const MotorcycleZodSchema = z.object({
   status: z.boolean().optional(),
   buyValue: z.number(),
   category: z.enum(categories),
-  engineCapacity: z.number().max(2500),
+  engineCapacity: z.number().min(1).max(2500),
 });
 
 type IMotorcycle = z.infer<typeof MotorcycleZodSchema>;
