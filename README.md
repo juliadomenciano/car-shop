@@ -16,7 +16,7 @@
   * Chai.js;
   * Mocha.js;
   * Sinon.js;
-  * POO;
+  * OOP;
   * SOLID;
   * Docker.
 
